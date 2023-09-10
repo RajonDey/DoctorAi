@@ -167,9 +167,9 @@ export default function AiSetting() {
                 <option disabled selected>
                   Subject Selection
                 </option>
-                <option value="Mathematics">Mathematics</option>
-                <option value="Chemistry">Chemistry</option>
-                <option value="Physics">Physics</option>
+                <option value="Mathematics">Botox</option>
+                <option value="Chemistry">Cheek Fillers</option>
+                <option value="Physics">Chemical Peels</option>
                 <option value="Literature">Literature</option>
                 <option value="IT">IT</option>
                 <option value="Biology">Biology</option>
