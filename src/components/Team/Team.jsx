@@ -67,7 +67,7 @@ const Team = () => {
         <span className="h-1 w-14 rounded-3xl bg-gray-700" />
       </div>
 
-      <div className="flex flex-col items-center justify-center px-4 w-full max-w-5xl sm:grid grid-cols-1 lg:grid-cols-2 gap-y-4 sm:gap-y-10">
+      <div className="">
         <img
           src="https://i.ibb.co/7Q181N7/SJ-Innovation-AI-Hack-Fest-2023-Internal-Team-Announcement-Code-Brewers.png"
           alt="Team"
