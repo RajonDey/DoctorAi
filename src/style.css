@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap");
+body {
+  font-family: "Space Grotesk", sans-serif;
+}
+
+.drawer {
+  background-color: #ffffff !important;
+}
+.drawer-side {
+  background-color: #ffffff !important;
+}
+.drawer-content {
+  background-color: #f3f3f6 !important;
+}
+textarea#message-input {
+  background: #fff;
+  border-radius: 10px 0px 0px 10px;
+}
+.send-button {
+  background: #fff;
+  border-radius: 0px 10px 10px 0px;
+  color: #1b1b1b;
+}
+.custom-body{
+  background: #ffffff;
+}
