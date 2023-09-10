@@ -167,21 +167,21 @@ export default function AiSetting() {
                 <option disabled selected>
                   Subject Selection
                 </option>
-                <option value="Mathematics">Botox</option>
-                <option value="Chemistry">Cheek Fillers</option>
-                <option value="Physics">Chemical Peels</option>
-                <option value="Literature">Literature</option>
-                <option value="IT">IT</option>
-                <option value="Biology">Biology</option>
-                <option value="History">History</option>
-                <option value="Psychology">Psychology</option>
-                <option value="Economics">Economics</option>
-                <option value="Sociology">Sociology</option>
-                <option value="Political Science">Political Science</option>
-                <option value="Philosophy">Philosophy</option>
-                <option value="Art">Art</option>
-                <option value="Music">Music</option>
-                <option value="Geography">Geography</option>
+                <option value="Botox">Botox</option>
+                <option value="Cheek Fillers">Cheek Fillers</option>
+                <option value="Chemical Peels">Chemical Peels</option>
+                <option value="Coolsculpting">Coolsculpting</option>
+                <option value="Dermal Fillers">Dermal Fillers</option>
+                <option value="Dysport">Dysport</option>
+                <option value="Facial Acne">Facial Acne</option>
+                <option value="Facial Skin Care">Facial Skin Care</option>
+                <option value="General Acne">General Acne</option>
+                <option value="Acne Treatment">Acne Treatment</option>
+                <option value="PRP Facial">PRP Facial</option>
+                <option value="PRP Hair Treatment">PRP Hair Treatment</option>
+                <option value="Restylan">Restylan</option>
+                <option value="Sculptra">Sculptra</option>
+                <option value="Volbella">Volbella</option>
               </select>
               {errors["subjectSelection"] && (
                 <p role="alert" className="text-error mt-2">
