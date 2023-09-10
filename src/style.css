@@ -21,6 +21,10 @@ textarea#message-input {
   border-radius: 0px 10px 10px 0px;
   color: #1b1b1b;
 }
-.custom-body{
+.custom-body {
   background: #ffffff;
+  min-width: 450px;
+  color: #1b1b1b;
+  box-shadow: -3px 4px 7px -4px rgba(0, 0, 0, 0.12);
+  border-radius: 10px;
 }

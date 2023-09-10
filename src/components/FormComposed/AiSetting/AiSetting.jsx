@@ -143,7 +143,7 @@ export default function AiSetting() {
       {/* <ToastContainer /> */}
       <div className="card-body custom-body">
         <form onSubmit={handleSubmit(onSubmit)} className="">
-          <div className="flex flex-row-reverse justify-between flex-wrap-reverse w-full place-items-end">
+          <div className="">
             <h1 className="text-4xl font-bold">AI Configure</h1>
             <div className="mb-2">
               <DrawerToggle></DrawerToggle>
@@ -153,7 +153,7 @@ export default function AiSetting() {
           <div className="mb-4 form-control">
             <label className=" flex flex-col">
               <span className="label text-gray-700 text-lg flex justify-start gap-2">
-                <span>Select Your Subject to Proceed</span>
+                <span>Choose Your Topic:</span>
               </span>
               <select
                 {...register("subjectSelection", {
@@ -191,65 +191,6 @@ export default function AiSetting() {
             </label>
           </div>
 
-          <div className="mb-4">
-            <p className="label text-lg flex justify-start gap-2">
-              <span>Assistance Level</span>
-            </p>
-            <div className="flex flex-row justify-start md:justify-between flex-wrap gap-1 items-center">
-              {[
-                { label: "Basic explanation", value: "Basic explanation" },
-                {
-                  label: "In-depth explanation",
-                  value: "In-depth explanation",
-                },
-                {
-                  label: "Step-by-step guidance",
-                  value: "Step-by-step guidance",
-                },
-                { label: "Practice exercises", value: "Practice exercises" },
-              ].map(({ label, value }, index) => {
-                return (
-                  <label
-                    key={value + index}
-                    className="text-sm h-8 min-w-[250px] w-full  max-w-full md:max-w-[45%] flex flex-wrap overflow-hidden items-center input input-ghost border-secondary border-solid hover:border-double focus:border-dashed mb-2"
-                  >
-                    <input
-                      defaultValue={aiConfig?.assistanceLevel}
-                      {...register("assistanceLevel", {
-                        required: "Please select an item in the list.",
-                      })}
-                      aria-invalid={
-                        errors["assistanceLevel"] ? "true" : "false"
-                      }
-                      value={value}
-                      type="radio"
-                      className="form-radio h-4 w-4 radio radio-secondary text-indigo-600 transition duration-150 ease-in-out"
-                    />
-                    <span className="ml-2 ">{label}</span>
-                  </label>
-                );
-              })}
-            </div>
-            {errors["assistanceLevel"] && (
-              <p role="alert" className="text-error">
-                {errors["assistanceLevel"]?.message}
-              </p>
-            )}
-          </div>
-
-          {/* get input text from user */}
-          <div className="mb-2">
-            <p className=" label text-lg">Enter additional instruction</p>
-            <input
-              {...register("additionalInstruction", {
-                // required: "Please enter additional instruction.",
-              })}
-              defaultValue={aiConfig?.additionalInstruction}
-              type="text"
-              className="input h-8 input-ghost text-sm input-secondary border-solid focus:border-dotted w-full"
-              placeholder="Enter additional instruction"
-            />
-          </div>
           {
             // errors will return when field validation fails
             errors["additionalInstruction"] && (
